@@ -10,61 +10,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="..//css/admin.css">
-    <style>
-        .col {
-            border: 5px solid #918D8C;
-        }
-        
-        div a {
-            text-decoration: none;
-        }
-    </style>
+
 </head>
 
 <body>
     <!--BARRA DE NAVEGACION-->
 
-    <div class="container-fluid" style="width:2500px">
-        <div class="row" style="text-align: center;">
-            <!--ANCHO --line-height: 75px;-->
-            <a style="text-decoration-line: none;" href="admin.html">
-                <div class="col" style="color:black;width:200px ;">
-                    Inicio
-                </div>
-            </a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" href="admin.html">
+                Inicio
+            </div>
 
-            <a style="text-decoration-line: none;" href="prodcutos.html">
-                <div class="col" style="color:black;width:200px ;">
-                    Mis Productos
-                </div>
-            </a>
+            <div class="col" href="prodcutos.html">
+                Mis Productos
+            </div>
 
-            <a style="text-decoration-line: none;" href="stock.html">
-                <div class="col" style="color:black;width:200px ;">
-                    Agregar Stock
-                </div>
-            </a>
+            <div class="col" href="stock.html">
+                Agregar Stock
+            </div>
 
-            <a style="text-decoration-line: none;" href="ventas.html">
-                <div class="col" style="color:black;width:200px ;">
-                    Ventas
-                </div>
-            </a>
+            <div class="col" href="ventas.html">
+                Ventas
+            </div>
 
-            <a style="text-decoration-line: none;" href="grafico.html">
-                <div class="col" style="color:black;width:200px ;">
-                    Grafico
-                </div>
-            </a>
+            <div class="col" href="grafico.html">
+                Grafico
+            </div>
 
-            <a style="text-decoration-line: none;" href="usuario.html">
-                <div class="col" style="color:black;width:200px ;">
-                    Cliente
-                </div>
-            </a>
+
+
+            <div class="col" href="usuario.html">
+                Cliente
+            </div>
+
 
             <a>
-                <div class="col" style="color: brown;width:200px ;">
+                <div class="col">
                     Cerrar Sesion
                 </div>
             </a>
@@ -72,18 +54,16 @@
     </div>
     <br>
     <br>
-    <!--TITLE AND SEACH-->
-    <section style=" text-align: center;position:relative; ">
-    </section>
+
 
 
     <!--USUARIO-->
-    <div class=" container " style="margin: 20px 280px;">
-        <h2 style="text-align: center;">Clientes</h2>
+    <div class=" container ">
+        <h2 class="clintetema">Clientes</h2>
 
         <p>Buscar:<input type="text "> <button type="submit " class="btn btn-outline-secondary">Buscar</button></p>
 
-        <table class="table table-bordered table-sm " style="width: 91%;height: 550px;">
+        <table class="table-bordered-table-sm">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -148,32 +128,28 @@
     </div>
 </body>
 
-<form style="width: 640px;height: 550px;">
-    <fieldset style="width: 250px; padding: 3px 10px;
-        border: PowderBlue 5px solid;
-        border-top-left-radius: 20px;
-        border-bottom-right-radius: 20px;">
+<form class="rellenar">
+    <fieldset class="inputtean">
         <h3>
             <legend>Ingresar</legend>
         </h3>
         <p>Usuario: </p>
-        <p><input type="text" name="usuarion" style="width: 210px;line-height:5px; " required></p>
+        <p><input type="text" name="usuarion" class="datos" required></p>
         <p>Nombre:</p>
-        <p><input type="text " name="nombren " style="width: 210px;line-height: 10px; " required></p>
+        <p><input type="text " name="nombren " class="datos" required></p>
         <p>Apellido: </p>
-        <p><input type="text " name="apellidon " style="width: 210px;line-height: 10px; " required></p>
+        <p><input type="text " name="apellidon " class="datos" required></p>
         <p>Cedula: </p>
-        <p><input type="text " name="cedulan " style="width: 210px;line-height: 10px; " required></p>
+        <p><input type="text " name="cedulan " class="datos" required></p>
         <p>Correo:</p>
-        <p><input type="text " name="correon " placeholder=" " style="width: 210px;line-height: 10px; " required></p>
+        <p><input type="text " name="correon " placeholder=" " class="datos" required></p>
         <p>Direccion: </p>
-        <p><input type="text " name="direccionn " style="width: 210px;line-height: 10px; " required></p>
+        <p><input type="text " name="direccionn " class="datos" required></p>
         <div>
-            <p><button type="submit " style="width: 210px;line-height: 20px;" class="btn btn-outline-secondary">Guardar</button></p>
+            <p><button type="submit " class="btn btn-outline-secondary">Guardar</button></p>
         </div>
     </fieldset>
-
-</form>
+    </div>
 
 
 
