@@ -1,26 +1,5 @@
-.container-fluid {
-    width: 2500px
-}
-
-.row {
-    text-align: center;
-}
-
-.col {
-    border: 5px solid #918D8C;
-}
-
 div a {
     text-decoration: none;
-}
-
-.col {
-    color: black;
-    width: 200px;
-}
-
-.container {
-    margin: 20px 280px;
 }
 
 .table-bordered-table-sm {
