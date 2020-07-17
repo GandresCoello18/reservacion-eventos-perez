@@ -44,7 +44,7 @@
         <!-- Page Content -->
         <div id="page-content-wrapper" class="w-100 bg-light-blue">
             <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-                <div class="container">
+                <div class="container-fluid">
                     <div id="content" class="container-fluid p-5">
                         <section class="py-3">
                             <!-- Highlights -->
@@ -170,28 +170,31 @@
                                     </div>
                                 </div>
                                 <!-- Fin tabla usarios -->
-                                <div class="col-4" style="
-            line-height: 1.0;
-            text-transform: initial;">
+                                <div class="col-4 ml-4" style="
+                                        line-height: 1.0;
+                                        text-transform: initial;">
                                     <form class="rellenar">
                                         <fieldset class="inputtean">
                                             <h3>
                                                 <legend>Ingresar</legend>
                                             </h3>
                                             <p>Nombre: </p>
-                                            <input type="text " name="nombren " class="datos" size="20" required></p>
+                                            <input type="text " name="nombren " class="datos form-control" size="20" required></p>
                                             <p>Apellido:</p>
-                                            <input type="text " name="apellidon " class="datos" size="20" required></p>
+                                            <input type="text " name="apellidon " class="datos form-control" size="20" required></p>
                                             <p>Cedula: </p>
-                                            <input type="text " name="cedulan " class="datos" size="20" required></p>
+                                            <input type="text " name="cedulan " class="datos form-control" size="20" required></p>
                                             <p>Correo: </p>
-                                            <input type="text " name="correon " placeholder=" " class="datos" size="20" required></p>
+                                            <input type="text " name="correon " placeholder=" " class="datos form-control" size="20" required></p>
                                             <p>Ciudad: </p>
-                                            <input type="text " name="ciudadn " placeholder=" " class="datos" size="20" required></p>
+                                            <input type="text " name="ciudadn " placeholder=" " class="datos form-control" size="20" required></p>
                                             <p>Direccion:</p>
-                                            <input type="text " name="direccionn " class="datos" size="20" required></p>
+                                            <input type="text " name="direccionn " class="datos form-control" size="20" required></p>
                                             <div>
-                                                <p><button type="submit " class="btn btn-outline-secondary">Guardar</button><button type="submit " class="btn btn-outline-secondary">Guardar</button></p>
+                                                <p>
+                                                    <button type="submit " class="btn btn-success">Guardar</button>
+                                                    <button type="submit " class="btn btn-danger ml-2">Limpiar</button>
+                                                </p>
                                             </div>
                                         </fieldset>
                                     </form>
