@@ -63,7 +63,8 @@ h6 {
 }
 
 #sidebar-container .menu {
-    width: 18rem;
+    /*MENU*/
+    width: 15rem;
 }
 
 #content-wrapper.toggled #sidebar-container {
