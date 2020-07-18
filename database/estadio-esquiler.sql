@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 18-07-2020 a las 21:59:59
+-- Tiempo de generación: 18-07-2020 a las 22:03:22
 -- Versión del servidor: 10.4.13-MariaDB
 -- Versión de PHP: 7.4.7
 
@@ -75,7 +75,9 @@ CREATE TABLE `usuarios` (
 -- Indices de la tabla `alquilados`
 --
 ALTER TABLE `alquilados`
-  ADD PRIMARY KEY (`id_alquilado`);
+  ADD PRIMARY KEY (`id_alquilado`),
+  ADD KEY `id_area` (`id_area`),
+  ADD KEY `id_user` (`id_user`);
 
 --
 -- Indices de la tabla `areas`
@@ -110,6 +112,17 @@ ALTER TABLE `areas`
 --
 ALTER TABLE `usuarios`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `alquilados`
+--
+ALTER TABLE `alquilados`
+  ADD CONSTRAINT `alquilados_ibfk_1` FOREIGN KEY (`id_area`) REFERENCES `areas` (`id_areas`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `alquilados_ibfk_2` FOREIGN KEY (`id_user`) REFERENCES `usuarios` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
