@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bienes Raices</title>
+    <title>Eventos Informacion</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -14,8 +14,8 @@
     <header class="site-header">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="/">
-                    <img src="img/logo.svg" alt="Logotipo de Bienes Raices">
+                <a href="index.html" style="text-decoration: none; ">
+                    <h1 style="color: rgba(3, 3, 3, 0.801);">SALA DE <span class="fw-300"> EVENTOS</span></h1>
                 </a>
                 <div class="mobile-menu">
                     <a href="#navegacion">
@@ -24,23 +24,27 @@
                 </div>
 
                 <nav id="navegacion" class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
+                    <div style="display: none;">
+                        <a href="nosotros.html"><strong>Sus reservaciones</strong></a>
+                        <a href="contacto.html"><strong>Contactanos</strong></a>
+                    </div>
+                    <div style="display: block;">
+                        <a href="login_register/login.html"><strong>Iniciar sesion</strong></a>
+                        <a href="login_register/Register.html"><strong>Registrarse</strong></a>
+                    </div>
                 </nav>
             </div>
         </div> <!-- contenedor -->
     </header>
 
     <main class="seccion contenedor">
-        <h2 class="fw-300 centrar-texto">Casas y Depas en Venta</h2>
+        <h2 class="fw-300 centrar-texto">Secciones de Estadios en Alquiler</h2>
 
         <div class="contenedor-anuncios">
             <div class="anuncio">
-                <img src="img/anuncio1.jpg" alt="Anuncio casa en el lago">
+                <img src="img/fondo sur.jpg" alt="Anuncio casa en el lago">
                 <div class="contenido-anuncio">
-                    <h3>Casa de Lujo en el Lago</h3>
+                    <h3>Fondo Sur (sector C)</h3>
                     <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
                     <p class="precio">$3,000,0000</p>
 
@@ -65,9 +69,9 @@
             </div>
 
             <div class="anuncio">
-                <img src="img/anuncio2.jpg" alt="Anuncio casa de lujo">
+                <img src="img/tribuna.jpg" alt="Anuncio casa de lujo" style="height: 24rem;">
                 <div class="contenido-anuncio">
-                    <h3>Casa terminados de lujo</h3>
+                    <h3>Tribuna (Sector A)</h3>
                     <p>Casa con diseño moderno, así como tecnología inteligente y amueblada</p>
                     <p class="precio">$2,000,0000</p>
                     <ul class="iconos-caracteristicas">
@@ -90,9 +94,9 @@
             </div>
 
             <div class="anuncio">
-                <img src="img/anuncio3.jpg" alt="Anuncio casa con alberca">
+                <img src="img/fondo norte.png" alt="Anuncio casa con alberca">
                 <div class="contenido-anuncio">
-                    <h3>Casa con alberca</h3>
+                    <h3>Fondo Norte (Sector D)</h3>
                     <p>Casa con alberca y acabados de lujo en la ciudad, excelente oportunidad</p>
                     <p class="precio">$3,000,0000</p>
                     <ul class="iconos-caracteristicas">
@@ -115,9 +119,9 @@
             </div> <!--anuncio-->
 
             <div class="anuncio">
-                <img src="img/anuncio4.jpg" alt="Anuncio casa de lujo">
+                <img src="img/preferencia.jpg" alt="Anuncio casa de lujo" style="height: 24rem;">
                 <div class="contenido-anuncio">
-                    <h3>Casa fuera de la ciudad</h3>
+                    <h3>Preferencia (Sector B)</h3>
                     <p>Casa con alberca y acabados de lujo fuera de la ciudad, excelente oportunidad</p>
                     <p class="precio">$2,000,0000</p>
                     <ul class="iconos-caracteristicas">
@@ -140,9 +144,9 @@
             </div> <!--anuncio-->
         
             <div class="anuncio">
-                <img src="img/anuncio5.jpg" alt="Anuncio casa con alberca">
+                <img src="img/esquina social.jpg" alt="Anuncio casa con alberca">
                 <div class="contenido-anuncio">
-                    <h3>Casa frente al bosque</h3>
+                    <h3>Esquina Sector Social</h3>
                     <p>Casa con alberca frente al bosque, excelente oportunidad</p>
                     <p class="precio">$3,500,0000</p>
                     <ul class="iconos-caracteristicas">
@@ -165,9 +169,9 @@
             </div> <!--anuncio-->
 
             <div class="anuncio">
-                <img src="img/anuncio6.jpg" alt="Anuncio casa con alberca">
+                <img src="img/esquina peñas.jpg" alt="Anuncio casa con alberca">
                 <div class="contenido-anuncio">
-                    <h3>Casa con alberca</h3>
+                    <h3>Cancha</h3>
                     <p>Casa con alberca y acabados de lujo en la ciudad, excelente oportunidad</p>
                     <p class="precio">$4,000,0000</p>
                     <ul class="iconos-caracteristicas">
@@ -193,11 +197,15 @@
 
     <footer class="site-footer seccion">
         <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
+            <nav id="navegacion" class="navegacion">
+                <div style="display: none;">
+                    <a href="nosotros.html"><strong>Sus reservaciones</strong></a>
+                    <a href="contacto.html"><strong>Contactanos</strong></a>
+                </div>
+                <div style="display: block;">
+                    <a href="login_register/login.html"><strong>Iniciar sesion</strong></a>
+                    <a href="login_register/Register.html"><strong>Registrarse</strong></a>
+                </div>
             </nav>
             <p class="copyright">Todos los Derechos Reservados 2019 &copy; </p>
         </div>
